@@ -19,10 +19,20 @@ def find(id)
 end 
 # ------------------------------------------------------------------------------------------------
   
-  
-  def experienced?(candidate)
-    # Your code Here
-  end
+# experienced? Takes in a single candidate (hash). Note: not the entire array.
+# Returns true if the candidate has 2 years of experience or more. Returns false otherwise
+def experienced?(candidate)
+  # puts "candidate is a", candidate.class    
+
+  if candidate[:years_of_experience] > 2
+    puts 'person has over 2 yrs'
+    return true
+  else 
+    puts 'person dont got enuf xp'
+    return false
+  end    
+end 
+# ------------------------------------------------------------------------------------------------
   
   def qualified_candidates(candidates)
     # Your code Here

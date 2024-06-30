@@ -8,4 +8,5 @@ require './filters'
 
 # pp @candidates
 
-pp find(10);
+# pp find(10);
+pp experienced?(@candidates[3])
